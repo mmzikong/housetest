@@ -1,0 +1,577 @@
+2022-05-15 12:00:07.904  INFO 22900 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 22900 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:00:07.913 DEBUG 22900 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:00:07.914  INFO 22900 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:00:09.159  INFO 22900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:00:09.216  INFO 22900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:00:09.969  INFO 22900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:00:09.979  INFO 22900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:00:09.979  INFO 22900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:00:10.441  INFO 22900 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:00:10.446  INFO 22900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:00:10.447  INFO 22900 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2469 ms
+2022-05-15 12:00:10.607  INFO 22900 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:00:10.659  INFO 22900 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:00:10.911  INFO 22900 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:00:10.999  INFO 22900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:00:11.001  WARN 22900 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:00:11.122  INFO 22900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:00:11.140  INFO 22900 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:00:11.756  INFO 22900 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:00:11.764  INFO 22900 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:00:12.369  WARN 22900 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:00:12.670  INFO 22900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:00:12.678  INFO 22900 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 5.638 seconds (JVM running for 7.021)
+2022-05-15 12:00:29.947  INFO 22900 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:00:29.948  INFO 22900 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:00:29.949  INFO 22900 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 12:00:31.240  WARN 22900 --- [http-nio-8081-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2022-05-15 12:02:01.495  INFO 16492 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 16492 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:02:01.498 DEBUG 16492 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:02:01.498  INFO 16492 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:02:02.404  INFO 16492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:02:02.481  INFO 16492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:02:03.077  INFO 16492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:02:03.086  INFO 16492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:02:03.087  INFO 16492 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:02:03.450  INFO 16492 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:02:03.457  INFO 16492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:02:03.458  INFO 16492 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1913 ms
+2022-05-15 12:02:03.636  INFO 16492 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:02:03.684  INFO 16492 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:02:03.936  INFO 16492 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:02:04.051  INFO 16492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:02:04.054  WARN 16492 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:02:04.199  INFO 16492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:02:04.219  INFO 16492 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:02:04.978  INFO 16492 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:02:04.990  INFO 16492 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:02:05.614  WARN 16492 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:02:05.971  INFO 16492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:02:05.983  INFO 16492 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.961 seconds (JVM running for 5.926)
+2022-05-15 12:02:10.358  INFO 16492 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:02:10.358  INFO 16492 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:02:10.359  INFO 16492 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 12:03:47.327  INFO 18372 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 18372 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:03:47.331 DEBUG 18372 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:03:47.331  INFO 18372 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:03:48.169  INFO 18372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:03:48.234  INFO 18372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:03:48.754  INFO 18372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:03:48.762  INFO 18372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:03:48.762  INFO 18372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:03:49.148  INFO 18372 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:03:49.155  INFO 18372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:03:49.155  INFO 18372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1771 ms
+2022-05-15 12:03:49.364  INFO 18372 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:03:49.423  INFO 18372 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:03:49.700  INFO 18372 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:03:49.797  INFO 18372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:03:49.800  WARN 18372 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:03:49.956  INFO 18372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:03:49.980  INFO 18372 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:03:50.618  INFO 18372 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:03:50.632  INFO 18372 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:03:51.128  WARN 18372 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:03:51.406  INFO 18372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:03:51.413  INFO 18372 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.674 seconds (JVM running for 5.699)
+2022-05-15 12:03:55.572  INFO 18372 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:03:55.572  INFO 18372 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:03:55.573  INFO 18372 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 12:05:32.188  INFO 23188 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 23188 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:05:32.191 DEBUG 23188 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:05:32.191  INFO 23188 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:05:32.994  INFO 23188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:05:33.059  INFO 23188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:05:33.604  INFO 23188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:05:33.615  INFO 23188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:05:33.616  INFO 23188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:05:33.965  INFO 23188 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:05:33.971  INFO 23188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:05:33.971  INFO 23188 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1731 ms
+2022-05-15 12:05:34.143  INFO 23188 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:05:34.191  INFO 23188 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:05:34.449  INFO 23188 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:05:34.558  INFO 23188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:05:34.560  WARN 23188 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:05:34.713  INFO 23188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:05:34.735  INFO 23188 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:05:35.495  INFO 23188 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:05:35.505  INFO 23188 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:05:36.119  WARN 23188 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:05:36.468  INFO 23188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:05:36.480  INFO 23188 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.89 seconds (JVM running for 5.921)
+2022-05-15 12:05:39.344  INFO 23188 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:05:39.345  INFO 23188 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:05:39.347  INFO 23188 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-15 12:06:03.197  INFO 25344 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 25344 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:06:03.200 DEBUG 25344 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:06:03.201  INFO 25344 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:06:04.066  INFO 25344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:06:04.144  INFO 25344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:06:04.703  INFO 25344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:06:04.711  INFO 25344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:06:04.711  INFO 25344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:06:05.060  INFO 25344 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:06:05.068  INFO 25344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:06:05.068  INFO 25344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1819 ms
+2022-05-15 12:06:05.266  INFO 25344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:06:05.315  INFO 25344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:06:05.598  INFO 25344 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:06:05.700  INFO 25344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:06:05.702  WARN 25344 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:06:05.886  INFO 25344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:06:05.920  INFO 25344 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:06:06.560  INFO 25344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:06:06.569  INFO 25344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:06:07.064  WARN 25344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:06:07.337  INFO 25344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:06:07.345  INFO 25344 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.715 seconds (JVM running for 5.813)
+2022-05-15 12:06:11.254  INFO 25344 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:06:11.254  INFO 25344 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:06:11.255  INFO 25344 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 12:07:22.034  INFO 13076 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 13076 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:07:22.037 DEBUG 13076 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:07:22.037  INFO 13076 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:07:22.836  INFO 13076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:07:22.902  INFO 13076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:07:23.440  INFO 13076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:07:23.451  INFO 13076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:07:23.451  INFO 13076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:07:23.792  INFO 13076 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:07:23.799  INFO 13076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:07:23.799  INFO 13076 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1709 ms
+2022-05-15 12:07:23.986  INFO 13076 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:07:24.041  INFO 13076 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:07:24.317  INFO 13076 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:07:24.422  INFO 13076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:07:24.425  WARN 13076 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:07:24.571  INFO 13076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:07:24.596  INFO 13076 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:07:25.291  INFO 13076 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:07:25.302  INFO 13076 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:07:25.832  WARN 13076 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:07:26.135  INFO 13076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:07:26.143  INFO 13076 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.704 seconds (JVM running for 5.767)
+2022-05-15 12:07:30.293  INFO 13076 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:07:30.293  INFO 13076 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:07:30.294  INFO 13076 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 12:08:41.068  INFO 15488 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 15488 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:08:41.071 DEBUG 15488 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:08:41.071  INFO 15488 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:08:41.968  INFO 15488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:08:42.037  INFO 15488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:08:42.562  INFO 15488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:08:42.570  INFO 15488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:08:42.571  INFO 15488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:08:42.929  INFO 15488 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:08:42.936  INFO 15488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:08:42.936  INFO 15488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1812 ms
+2022-05-15 12:08:43.157  INFO 15488 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:08:43.214  INFO 15488 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:08:43.477  INFO 15488 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:08:43.591  INFO 15488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:08:43.594  WARN 15488 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:08:43.750  INFO 15488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:08:43.770  INFO 15488 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:08:44.355  INFO 15488 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:08:44.363  INFO 15488 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:08:44.828  WARN 15488 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:08:45.088  INFO 15488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:08:45.096  INFO 15488 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.604 seconds (JVM running for 5.631)
+2022-05-15 12:08:50.758  INFO 15488 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:08:50.758  INFO 15488 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:08:50.759  INFO 15488 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 12:09:19.210  INFO 2332 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 2332 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:09:19.213 DEBUG 2332 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:09:19.214  INFO 2332 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:09:20.013  INFO 2332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:09:20.084  INFO 2332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:09:20.596  INFO 2332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:09:20.604  INFO 2332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:09:20.605  INFO 2332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:09:20.970  INFO 2332 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:09:20.980  INFO 2332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:09:20.980  INFO 2332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1717 ms
+2022-05-15 12:09:21.200  INFO 2332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:09:21.256  INFO 2332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:09:21.576  INFO 2332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:09:21.695  INFO 2332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:09:21.700  WARN 2332 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:09:21.844  INFO 2332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:09:21.862  INFO 2332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:09:22.443  INFO 2332 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:09:22.451  INFO 2332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:09:22.955  WARN 2332 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:09:23.212  INFO 2332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:09:23.220  INFO 2332 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.573 seconds (JVM running for 5.621)
+2022-05-15 12:09:26.155  INFO 2332 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:09:26.156  INFO 2332 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:09:26.158  INFO 2332 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-15 12:10:05.530  INFO 16800 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 16800 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:10:05.534 DEBUG 16800 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:10:05.534  INFO 16800 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:10:06.411  INFO 16800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:10:06.518  INFO 16800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:10:07.073  INFO 16800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:10:07.083  INFO 16800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:10:07.083  INFO 16800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:10:07.411  INFO 16800 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:10:07.417  INFO 16800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:10:07.417  INFO 16800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1834 ms
+2022-05-15 12:10:07.603  INFO 16800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:10:07.655  INFO 16800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:10:07.937  INFO 16800 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:10:08.048  INFO 16800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:10:08.051  WARN 16800 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:10:08.192  INFO 16800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:10:08.215  INFO 16800 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:10:08.987  INFO 16800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:10:08.998  INFO 16800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:10:09.495  WARN 16800 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:10:09.771  INFO 16800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:10:09.778  INFO 16800 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.817 seconds (JVM running for 5.907)
+2022-05-15 12:10:13.983  INFO 16800 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:10:13.984  INFO 16800 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:10:13.985  INFO 16800 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 12:10:45.856  INFO 6172 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 6172 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:10:45.859 DEBUG 6172 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:10:45.860  INFO 6172 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:10:46.681  INFO 6172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:10:46.746  INFO 6172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:10:47.205  INFO 6172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:10:47.214  INFO 6172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:10:47.214  INFO 6172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:10:47.594  INFO 6172 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:10:47.604  INFO 6172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:10:47.604  INFO 6172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1695 ms
+2022-05-15 12:10:47.787  INFO 6172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:10:47.830  INFO 6172 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:10:48.077  INFO 6172 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:10:48.169  INFO 6172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:10:48.171  WARN 6172 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:10:48.295  INFO 6172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:10:48.317  INFO 6172 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:10:49.074  INFO 6172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:10:49.085  INFO 6172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:10:49.689  WARN 6172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:10:49.946  INFO 6172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:10:49.954  INFO 6172 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.704 seconds (JVM running for 5.742)
+2022-05-15 12:10:58.406  INFO 6172 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:10:58.406  INFO 6172 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:10:58.407  INFO 6172 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 12:11:35.033  INFO 18112 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 18112 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:11:35.036 DEBUG 18112 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:11:35.036  INFO 18112 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:11:35.803  INFO 18112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:11:35.866  INFO 18112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:11:36.374  INFO 18112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:11:36.389  INFO 18112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:11:36.390  INFO 18112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:11:36.862  INFO 18112 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:11:36.869  INFO 18112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:11:36.870  INFO 18112 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1784 ms
+2022-05-15 12:11:37.088  INFO 18112 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:11:37.136  INFO 18112 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:11:37.371  INFO 18112 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:11:37.454  INFO 18112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:11:37.456  WARN 18112 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:11:37.580  INFO 18112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:11:37.600  INFO 18112 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:11:38.323  INFO 18112 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:11:38.334  INFO 18112 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:11:38.970  WARN 18112 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:11:39.280  INFO 18112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:11:39.287  INFO 18112 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.823 seconds (JVM running for 5.824)
+2022-05-15 12:11:41.953  INFO 18112 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:11:41.953  INFO 18112 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:11:41.954  INFO 18112 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 12:19:27.651  INFO 23084 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 23084 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:19:27.654 DEBUG 23084 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:19:27.654  INFO 23084 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:19:28.467  INFO 23084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:19:28.535  INFO 23084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:19:29.051  INFO 23084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:19:29.059  INFO 23084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:19:29.060  INFO 23084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:19:29.411  INFO 23084 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:19:29.419  INFO 23084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:19:29.419  INFO 23084 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1715 ms
+2022-05-15 12:19:29.635  INFO 23084 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:19:29.700  INFO 23084 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:19:29.978  INFO 23084 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:19:30.084  INFO 23084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:19:30.086  WARN 23084 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:19:30.242  INFO 23084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:19:30.261  INFO 23084 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:19:30.858  INFO 23084 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:19:30.866  INFO 23084 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:19:31.326  WARN 23084 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:19:31.582  INFO 23084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:19:31.590  INFO 23084 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.573 seconds (JVM running for 5.59)
+2022-05-15 12:19:40.066  INFO 23084 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:19:40.066  INFO 23084 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:19:40.068  INFO 23084 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 12:53:52.686  INFO 12904 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 12904 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:53:52.689 DEBUG 12904 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:53:52.690  INFO 12904 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:53:53.567  INFO 12904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:53:53.638  INFO 12904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:53:54.528  INFO 12904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:53:54.578  INFO 12904 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:53:54.580  INFO 12904 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:53:55.373  INFO 12904 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:53:55.380  INFO 12904 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:53:55.380  INFO 12904 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2639 ms
+2022-05-15 12:53:55.570  INFO 12904 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:53:55.609  INFO 12904 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:53:56.076  INFO 12904 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:53:56.154  INFO 12904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:53:56.157  WARN 12904 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:53:56.256  INFO 12904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:53:56.270  INFO 12904 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:53:57.020  INFO 12904 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:53:57.037  INFO 12904 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:53:58.205  WARN 12904 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:53:59.138  INFO 12904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:53:59.154  INFO 12904 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 7.073 seconds (JVM running for 8.73)
+2022-05-15 12:54:04.436  INFO 4536 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 4536 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:54:04.439 DEBUG 4536 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:54:04.439  INFO 4536 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:54:05.244  INFO 4536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:54:05.319  INFO 4536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:54:05.844  INFO 4536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:54:05.853  INFO 4536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:54:05.854  INFO 4536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:54:06.222  INFO 4536 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:54:06.230  INFO 4536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:54:06.230  INFO 4536 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1737 ms
+2022-05-15 12:54:06.450  INFO 4536 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:54:06.501  INFO 4536 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:54:06.765  INFO 4536 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:54:06.885  INFO 4536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:54:06.888  WARN 4536 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:54:07.040  INFO 4536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:54:07.060  INFO 4536 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:54:07.672  INFO 4536 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:54:07.680  INFO 4536 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:54:08.159  WARN 4536 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:54:08.447  INFO 4536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:54:08.455  INFO 4536 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.585 seconds (JVM running for 5.706)
+2022-05-15 12:54:12.565  INFO 4536 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:54:12.566  INFO 4536 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:54:12.568  INFO 4536 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-15 12:55:23.796  INFO 14124 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 14124 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:55:23.799 DEBUG 14124 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:55:23.799  INFO 14124 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:55:24.668  INFO 14124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:55:24.745  INFO 14124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:55:25.331  INFO 14124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:55:25.341  INFO 14124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:55:25.342  INFO 14124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:55:25.709  INFO 14124 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:55:25.717  INFO 14124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:55:25.717  INFO 14124 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1862 ms
+2022-05-15 12:55:25.917  INFO 14124 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:55:25.968  INFO 14124 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:55:26.259  INFO 14124 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:55:26.376  INFO 14124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:55:26.378  WARN 14124 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:55:26.534  INFO 14124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:55:26.557  INFO 14124 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:55:27.314  INFO 14124 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:55:27.325  INFO 14124 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:55:27.932  WARN 14124 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:55:28.279  INFO 14124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:55:28.289  INFO 14124 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 5.088 seconds (JVM running for 6.219)
+2022-05-15 12:55:30.612  INFO 14124 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:55:30.612  INFO 14124 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:55:30.613  INFO 14124 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 12:56:43.123  INFO 14868 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 14868 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:56:43.126 DEBUG 14868 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:56:43.127  INFO 14868 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:56:43.976  INFO 14868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:56:44.044  INFO 14868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:56:44.576  INFO 14868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:56:44.587  INFO 14868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:56:44.587  INFO 14868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:56:44.940  INFO 14868 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:56:44.946  INFO 14868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:56:44.946  INFO 14868 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1770 ms
+2022-05-15 12:56:45.125  INFO 14868 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:56:45.178  INFO 14868 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:56:45.433  INFO 14868 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:56:45.540  INFO 14868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:56:45.542  WARN 14868 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:56:45.688  INFO 14868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:56:45.711  INFO 14868 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:56:46.449  INFO 14868 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:56:46.460  INFO 14868 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:56:47.041  WARN 14868 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:56:47.341  INFO 14868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:56:47.350  INFO 14868 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.805 seconds (JVM running for 5.804)
+2022-05-15 12:56:49.591  INFO 14868 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:56:49.592  INFO 14868 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:56:49.593  INFO 14868 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 12:57:16.287  INFO 4760 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 4760 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 12:57:16.290 DEBUG 4760 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 12:57:16.291  INFO 4760 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 12:57:17.092  INFO 4760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 12:57:17.156  INFO 4760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2022-05-15 12:57:17.685  INFO 4760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 12:57:17.693  INFO 4760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 12:57:17.694  INFO 4760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 12:57:18.069  INFO 4760 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 12:57:18.077  INFO 4760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 12:57:18.077  INFO 4760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1736 ms
+2022-05-15 12:57:18.295  INFO 4760 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 12:57:18.406  INFO 4760 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 12:57:18.697  INFO 4760 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 12:57:18.801  INFO 4760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 12:57:18.803  WARN 4760 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 12:57:18.961  INFO 4760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 12:57:18.981  INFO 4760 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 12:57:19.582  INFO 4760 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 12:57:19.590  INFO 4760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 12:57:20.060  WARN 4760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 12:57:20.316  INFO 4760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 12:57:20.324  INFO 4760 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 4.611 seconds (JVM running for 5.617)
+2022-05-15 12:57:23.083  INFO 4760 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 12:57:23.084  INFO 4760 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 12:57:23.084  INFO 4760 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-05-15 13:12:34.618  INFO 24552 --- [main] com.base.housetest.HousetestApplication  : Starting HousetestApplication using Java 1.8.0_181 on DESKTOP-R61HDRQ with PID 24552 (D:\xampp\java\housetest\target\classes started by 赵晟浩 in D:\xampp\java\housetest)
+2022-05-15 13:12:34.631 DEBUG 24552 --- [main] com.base.housetest.HousetestApplication  : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-15 13:12:34.632  INFO 24552 --- [main] com.base.housetest.HousetestApplication  : No active profile set, falling back to default profiles: default
+2022-05-15 13:12:35.686  INFO 24552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-15 13:12:35.797  INFO 24552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interfaces.
+2022-05-15 13:12:36.570  INFO 24552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-15 13:12:36.584  INFO 24552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 13:12:36.585  INFO 24552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-15 13:12:37.121  INFO 24552 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-05-15 13:12:37.129  INFO 24552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 13:12:37.130  INFO 24552 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2411 ms
+2022-05-15 13:12:37.460  INFO 24552 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-15 13:12:37.535  INFO 24552 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-05-15 13:12:37.891  INFO 24552 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-15 13:12:38.035  INFO 24552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-15 13:12:38.038  WARN 24552 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-15 13:12:38.235  INFO 24552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-15 13:12:38.266  INFO 24552 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-15 13:12:39.231  INFO 24552 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-15 13:12:39.250  INFO 24552 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-15 13:12:40.224  WARN 24552 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 13:12:40.775  INFO 24552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-15 13:12:40.788  INFO 24552 --- [main] com.base.housetest.HousetestApplication  : Started HousetestApplication in 7.034 seconds (JVM running for 8.681)
+2022-05-15 13:15:32.477  INFO 24552 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 13:15:32.478  INFO 24552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 13:15:32.479  INFO 24552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-15 13:15:42.957 DEBUG 24552 --- [http-nio-8081-exec-7] c.base.housetest.dao.StudentDao.findAll  : ==>  Preparing: select * from student; 
+2022-05-15 13:15:42.965 DEBUG 24552 --- [http-nio-8081-exec-7] c.base.housetest.dao.StudentDao.findAll  : ==> Parameters: 
+2022-05-15 13:15:42.981 DEBUG 24552 --- [http-nio-8081-exec-7] c.base.housetest.dao.StudentDao.findAll  : <==      Total: 2
+2022-05-15 13:58:25.981 DEBUG 24552 --- [http-nio-8081-exec-5] c.base.housetest.dao.StudentDao.findAll  : ==>  Preparing: select * from student; 
+2022-05-15 13:58:25.987 DEBUG 24552 --- [http-nio-8081-exec-5] c.base.housetest.dao.StudentDao.findAll  : ==> Parameters: 
+2022-05-15 13:58:26.001 DEBUG 24552 --- [http-nio-8081-exec-5] c.base.housetest.dao.StudentDao.findAll  : <==      Total: 2
+2022-05-15 13:59:11.075 DEBUG 24552 --- [http-nio-8081-exec-10] com.base.housetest.dao.StudentDao.add    : ==>  Preparing: insert into student(student_name, student_no, sex,department,student_class,student_id,nation,hold,area,student_tel) values (?,?,?,?,?,?,?,?,?,?); 
+2022-05-15 13:59:11.088 DEBUG 24552 --- [http-nio-8081-exec-10] com.base.housetest.dao.StudentDao.add    : ==> Parameters: 11(String), 12344565(String), 男(String), (String), 18计算机本5(String), 132458454652(String), 汉族(String), 11(String), 湖北襄樊市襄城区(String), 12344566(String)
+2022-05-15 13:59:11.105 DEBUG 24552 --- [http-nio-8081-exec-10] com.base.housetest.dao.StudentDao.add    : <==    Updates: 1
+2022-05-15 13:59:11.117 DEBUG 24552 --- [http-nio-8081-exec-1] c.base.housetest.dao.StudentDao.findAll  : ==>  Preparing: select * from student; 
+2022-05-15 13:59:11.118 DEBUG 24552 --- [http-nio-8081-exec-1] c.base.housetest.dao.StudentDao.findAll  : ==> Parameters: 
+2022-05-15 13:59:11.120 DEBUG 24552 --- [http-nio-8081-exec-1] c.base.housetest.dao.StudentDao.findAll  : <==      Total: 3
+2022-05-15 13:59:22.577 DEBUG 24552 --- [http-nio-8081-exec-4] c.base.housetest.dao.StudentDao.findAll  : ==>  Preparing: select * from student; 
+2022-05-15 13:59:22.578 DEBUG 24552 --- [http-nio-8081-exec-4] c.base.housetest.dao.StudentDao.findAll  : ==> Parameters: 
+2022-05-15 13:59:22.581 DEBUG 24552 --- [http-nio-8081-exec-4] c.base.housetest.dao.StudentDao.findAll  : <==      Total: 3
+2022-05-15 13:59:24.555 DEBUG 24552 --- [http-nio-8081-exec-5] c.b.h.dao.StudentDao.findByStudentNo     : ==>  Preparing: SELECT * FROM student WHERE student_no = ? 
+2022-05-15 13:59:24.556 DEBUG 24552 --- [http-nio-8081-exec-5] c.b.h.dao.StudentDao.findByStudentNo     : ==> Parameters: 12344565(String)
+2022-05-15 13:59:24.558 DEBUG 24552 --- [http-nio-8081-exec-5] c.b.h.dao.StudentDao.findByStudentNo     : <==      Total: 1
+2022-05-15 13:59:30.710 DEBUG 24552 --- [http-nio-8081-exec-8] com.base.housetest.dao.MoveInDao.add     : ==>  Preparing: insert into move_in(name,student_no, in_date,area,where_in,why_in) values (?,?,?,?,?,?) 
+2022-05-15 13:59:30.714 DEBUG 24552 --- [http-nio-8081-exec-8] com.base.housetest.dao.MoveInDao.add     : ==> Parameters: 11(String), 12344565(String), 2022-05-19 00:00:00.0(Timestamp), 湖北襄樊市襄城区(String), 11(String), 1(String)
+2022-05-15 13:59:30.720 DEBUG 24552 --- [http-nio-8081-exec-8] com.base.housetest.dao.MoveInDao.add     : <==    Updates: 1
+2022-05-15 13:59:30.720 DEBUG 24552 --- [http-nio-8081-exec-8] c.base.housetest.dao.StudentDao.moveIn   : ==>  Preparing: update student set area = ?,hold = ?,in_date = ? where student_no=? 
+2022-05-15 13:59:30.720 DEBUG 24552 --- [http-nio-8081-exec-8] c.base.housetest.dao.StudentDao.moveIn   : ==> Parameters: 浙江温州市瓯海区(String), 温州商学院(String), 2022-05-19 00:00:00.0(Timestamp), 12344565(String)
+2022-05-15 13:59:30.730 DEBUG 24552 --- [http-nio-8081-exec-8] c.base.housetest.dao.StudentDao.moveIn   : <==    Updates: 1
+2022-05-15 13:59:30.743 DEBUG 24552 --- [http-nio-8081-exec-7] c.base.housetest.dao.MoveInDao.findAll   : ==>  Preparing: select * from move_in; 
+2022-05-15 13:59:30.744 DEBUG 24552 --- [http-nio-8081-exec-7] c.base.housetest.dao.MoveInDao.findAll   : ==> Parameters: 
+2022-05-15 13:59:30.746 DEBUG 24552 --- [http-nio-8081-exec-7] c.base.housetest.dao.MoveInDao.findAll   : <==      Total: 3
+2022-05-15 13:59:41.168 DEBUG 24552 --- [http-nio-8081-exec-9] c.base.housetest.dao.StudentDao.findAll  : ==>  Preparing: select * from student; 
+2022-05-15 13:59:41.168 DEBUG 24552 --- [http-nio-8081-exec-9] c.base.housetest.dao.StudentDao.findAll  : ==> Parameters: 
+2022-05-15 13:59:41.172 DEBUG 24552 --- [http-nio-8081-exec-9] c.base.housetest.dao.StudentDao.findAll  : <==      Total: 3
+2022-05-15 13:59:48.931 DEBUG 24552 --- [http-nio-8081-exec-10] c.b.h.dao.StudentDao.findByStudentNo     : ==>  Preparing: SELECT * FROM student WHERE student_no = ? 
+2022-05-15 13:59:48.932 DEBUG 24552 --- [http-nio-8081-exec-10] c.b.h.dao.StudentDao.findByStudentNo     : ==> Parameters: 12344565(String)
+2022-05-15 13:59:48.933 DEBUG 24552 --- [http-nio-8081-exec-10] c.b.h.dao.StudentDao.findByStudentNo     : <==      Total: 1
+2022-05-15 14:00:09.002 DEBUG 24552 --- [http-nio-8081-exec-5] com.base.housetest.dao.MoveOutDao.add    : ==>  Preparing: insert into move_out(student_no,name, out_date,area,where_out,why_out) values (?,?,?,?,?,?) 
+2022-05-15 14:00:09.004 DEBUG 24552 --- [http-nio-8081-exec-5] com.base.housetest.dao.MoveOutDao.add    : ==> Parameters: 12344565(String), 11(String), 2022-05-16 00:00:00.0(Timestamp), 北京市辖区东城区(String), 1(String), 1(String)
+2022-05-15 14:00:09.008 DEBUG 24552 --- [http-nio-8081-exec-5] com.base.housetest.dao.MoveOutDao.add    : <==    Updates: 1
+2022-05-15 14:00:09.008 DEBUG 24552 --- [http-nio-8081-exec-5] c.base.housetest.dao.StudentDao.moveOut  : ==>  Preparing: update student set area = ?,hold = ?,out_date = ? where student_no=? 
+2022-05-15 14:00:09.009 DEBUG 24552 --- [http-nio-8081-exec-5] c.base.housetest.dao.StudentDao.moveOut  : ==> Parameters: 北京市辖区东城区(String), 1(String), 2022-05-16 00:00:00.0(Timestamp), 12344565(String)
+2022-05-15 14:00:09.013 DEBUG 24552 --- [http-nio-8081-exec-5] c.base.housetest.dao.StudentDao.moveOut  : <==    Updates: 1
+2022-05-15 14:00:09.020 DEBUG 24552 --- [http-nio-8081-exec-6] c.base.housetest.dao.MoveOutDao.findAll  : ==>  Preparing: select * from move_out; 
+2022-05-15 14:00:09.021 DEBUG 24552 --- [http-nio-8081-exec-6] c.base.housetest.dao.MoveOutDao.findAll  : ==> Parameters: 
+2022-05-15 14:00:09.022 DEBUG 24552 --- [http-nio-8081-exec-6] c.base.housetest.dao.MoveOutDao.findAll  : <==      Total: 2
+2022-05-15 14:00:19.082 DEBUG 24552 --- [http-nio-8081-exec-7] c.base.housetest.dao.StudentDao.findAll  : ==>  Preparing: select * from student; 
+2022-05-15 14:00:19.083 DEBUG 24552 --- [http-nio-8081-exec-7] c.base.housetest.dao.StudentDao.findAll  : ==> Parameters: 
+2022-05-15 14:00:19.088 DEBUG 24552 --- [http-nio-8081-exec-7] c.base.housetest.dao.StudentDao.findAll  : <==      Total: 3
+2022-05-15 14:00:25.635 DEBUG 24552 --- [http-nio-8081-exec-1] c.b.housetest.dao.EpidemicDao.findAll    : ==>  Preparing: SELECT * FROM epidemic 
+2022-05-15 14:00:25.636 DEBUG 24552 --- [http-nio-8081-exec-1] c.b.housetest.dao.EpidemicDao.findAll    : ==> Parameters: 
+2022-05-15 14:00:25.638 DEBUG 24552 --- [http-nio-8081-exec-1] c.b.housetest.dao.EpidemicDao.findAll    : <==      Total: 1
+2022-05-15 14:00:25.639 DEBUG 24552 --- [http-nio-8081-exec-1] c.b.h.dao.EpidemicDao.findAllArea        : ==>  Preparing: SELECT risk_region FROM epidemic 
+2022-05-15 14:00:25.639 DEBUG 24552 --- [http-nio-8081-exec-1] c.b.h.dao.EpidemicDao.findAllArea        : ==> Parameters: 
+2022-05-15 14:00:25.641 DEBUG 24552 --- [http-nio-8081-exec-1] c.b.h.dao.EpidemicDao.findAllArea        : <==      Total: 1
+2022-05-15 14:00:25.641 DEBUG 24552 --- [http-nio-8081-exec-1] c.b.h.dao.EpidemicDao.findAllArea        : ==>  Preparing: SELECT risk_region FROM epidemic 
+2022-05-15 14:00:25.641 DEBUG 24552 --- [http-nio-8081-exec-1] c.b.h.dao.EpidemicDao.findAllArea        : ==> Parameters: 
+2022-05-15 14:00:25.642 DEBUG 24552 --- [http-nio-8081-exec-1] c.b.h.dao.EpidemicDao.findAllArea        : <==      Total: 1
+2022-05-15 14:00:25.673 DEBUG 24552 --- [http-nio-8081-exec-1] c.b.housetest.dao.StudentDao.findByArea  : ==>  Preparing: select * from student where area in ( ? ) 
+2022-05-15 14:00:25.673 DEBUG 24552 --- [http-nio-8081-exec-1] c.b.housetest.dao.StudentDao.findByArea  : ==> Parameters: 上海市辖区浦东新区(String)
+2022-05-15 14:00:25.675 DEBUG 24552 --- [http-nio-8081-exec-1] c.b.housetest.dao.StudentDao.findByArea  : <==      Total: 1
+2022-05-15 14:00:36.625 DEBUG 24552 --- [http-nio-8081-exec-2] c.base.housetest.dao.StudentDao.findAll  : ==>  Preparing: select * from student; 
+2022-05-15 14:00:36.626 DEBUG 24552 --- [http-nio-8081-exec-2] c.base.housetest.dao.StudentDao.findAll  : ==> Parameters: 
+2022-05-15 14:00:36.628 DEBUG 24552 --- [http-nio-8081-exec-2] c.base.housetest.dao.StudentDao.findAll  : <==      Total: 3
+2022-05-15 14:00:39.971 DEBUG 24552 --- [http-nio-8081-exec-3] c.b.housetest.dao.EpidemicDao.findAll    : ==>  Preparing: SELECT * FROM epidemic 
+2022-05-15 14:00:39.972 DEBUG 24552 --- [http-nio-8081-exec-3] c.b.housetest.dao.EpidemicDao.findAll    : ==> Parameters: 
+2022-05-15 14:00:39.974 DEBUG 24552 --- [http-nio-8081-exec-3] c.b.housetest.dao.EpidemicDao.findAll    : <==      Total: 1
+2022-05-15 14:00:39.975 DEBUG 24552 --- [http-nio-8081-exec-3] c.b.h.dao.EpidemicDao.findAllArea        : ==>  Preparing: SELECT risk_region FROM epidemic 
+2022-05-15 14:00:39.976 DEBUG 24552 --- [http-nio-8081-exec-3] c.b.h.dao.EpidemicDao.findAllArea        : ==> Parameters: 
+2022-05-15 14:00:39.977 DEBUG 24552 --- [http-nio-8081-exec-3] c.b.h.dao.EpidemicDao.findAllArea        : <==      Total: 1
+2022-05-15 14:00:39.978 DEBUG 24552 --- [http-nio-8081-exec-3] c.b.h.dao.EpidemicDao.findAllArea        : ==>  Preparing: SELECT risk_region FROM epidemic 
+2022-05-15 14:00:39.978 DEBUG 24552 --- [http-nio-8081-exec-3] c.b.h.dao.EpidemicDao.findAllArea        : ==> Parameters: 
+2022-05-15 14:00:39.979 DEBUG 24552 --- [http-nio-8081-exec-3] c.b.h.dao.EpidemicDao.findAllArea        : <==      Total: 1
+2022-05-15 14:00:39.980 DEBUG 24552 --- [http-nio-8081-exec-3] c.b.housetest.dao.StudentDao.findByArea  : ==>  Preparing: select * from student where area in ( ? ) 
+2022-05-15 14:00:39.980 DEBUG 24552 --- [http-nio-8081-exec-3] c.b.housetest.dao.StudentDao.findByArea  : ==> Parameters: 上海市辖区浦东新区(String)
+2022-05-15 14:00:39.982 DEBUG 24552 --- [http-nio-8081-exec-3] c.b.housetest.dao.StudentDao.findByArea  : <==      Total: 1
+2022-05-15 14:00:45.830 DEBUG 24552 --- [http-nio-8081-exec-5] com.base.housetest.dao.EpidemicDao.add   : ==>  Preparing: INSERT INTO epidemic(risk_region) values (?) 
+2022-05-15 14:00:45.831 DEBUG 24552 --- [http-nio-8081-exec-5] com.base.housetest.dao.EpidemicDao.add   : ==> Parameters: 北京市辖区东城区(String)
+2022-05-15 14:00:45.834 DEBUG 24552 --- [http-nio-8081-exec-5] com.base.housetest.dao.EpidemicDao.add   : <==    Updates: 1
+2022-05-15 14:00:45.846 DEBUG 24552 --- [http-nio-8081-exec-6] c.b.housetest.dao.EpidemicDao.findAll    : ==>  Preparing: SELECT * FROM epidemic 
+2022-05-15 14:00:45.847 DEBUG 24552 --- [http-nio-8081-exec-6] c.b.housetest.dao.EpidemicDao.findAll    : ==> Parameters: 
+2022-05-15 14:00:45.848 DEBUG 24552 --- [http-nio-8081-exec-6] c.b.housetest.dao.EpidemicDao.findAll    : <==      Total: 2
+2022-05-15 14:00:45.848 DEBUG 24552 --- [http-nio-8081-exec-6] c.b.h.dao.EpidemicDao.findAllArea        : ==>  Preparing: SELECT risk_region FROM epidemic 
+2022-05-15 14:00:45.848 DEBUG 24552 --- [http-nio-8081-exec-6] c.b.h.dao.EpidemicDao.findAllArea        : ==> Parameters: 
+2022-05-15 14:00:45.849 DEBUG 24552 --- [http-nio-8081-exec-6] c.b.h.dao.EpidemicDao.findAllArea        : <==      Total: 2
+2022-05-15 14:00:45.850 DEBUG 24552 --- [http-nio-8081-exec-6] c.b.h.dao.EpidemicDao.findAllArea        : ==>  Preparing: SELECT risk_region FROM epidemic 
+2022-05-15 14:00:45.850 DEBUG 24552 --- [http-nio-8081-exec-6] c.b.h.dao.EpidemicDao.findAllArea        : ==> Parameters: 
+2022-05-15 14:00:45.851 DEBUG 24552 --- [http-nio-8081-exec-6] c.b.h.dao.EpidemicDao.findAllArea        : <==      Total: 2
+2022-05-15 14:00:45.852 DEBUG 24552 --- [http-nio-8081-exec-6] c.b.housetest.dao.StudentDao.findByArea  : ==>  Preparing: select * from student where area in ( ? , ? ) 
+2022-05-15 14:00:45.852 DEBUG 24552 --- [http-nio-8081-exec-6] c.b.housetest.dao.StudentDao.findByArea  : ==> Parameters: 上海市辖区浦东新区(String), 北京市辖区东城区(String)
+2022-05-15 14:00:45.854 DEBUG 24552 --- [http-nio-8081-exec-6] c.b.housetest.dao.StudentDao.findByArea  : <==      Total: 2
+2022-05-15 14:00:52.915 DEBUG 24552 --- [http-nio-8081-exec-8] c.base.housetest.dao.NoticeDao.findAll   : ==>  Preparing: SELECT * FROM notice 
+2022-05-15 14:00:52.916 DEBUG 24552 --- [http-nio-8081-exec-8] c.base.housetest.dao.NoticeDao.findAll   : ==> Parameters: 
+2022-05-15 14:00:52.917 DEBUG 24552 --- [http-nio-8081-exec-8] c.base.housetest.dao.NoticeDao.findAll   : <==      Total: 2
+2022-05-15 14:00:56.682 DEBUG 24552 --- [http-nio-8081-exec-7] c.b.housetest.dao.EpidemicDao.findAll    : ==>  Preparing: SELECT * FROM epidemic 
+2022-05-15 14:00:56.683 DEBUG 24552 --- [http-nio-8081-exec-7] c.b.housetest.dao.EpidemicDao.findAll    : ==> Parameters: 
+2022-05-15 14:00:56.684 DEBUG 24552 --- [http-nio-8081-exec-7] c.b.housetest.dao.EpidemicDao.findAll    : <==      Total: 2
+2022-05-15 14:00:56.684 DEBUG 24552 --- [http-nio-8081-exec-7] c.b.h.dao.EpidemicDao.findAllArea        : ==>  Preparing: SELECT risk_region FROM epidemic 
+2022-05-15 14:00:56.684 DEBUG 24552 --- [http-nio-8081-exec-7] c.b.h.dao.EpidemicDao.findAllArea        : ==> Parameters: 
+2022-05-15 14:00:56.685 DEBUG 24552 --- [http-nio-8081-exec-7] c.b.h.dao.EpidemicDao.findAllArea        : <==      Total: 2
+2022-05-15 14:00:56.685 DEBUG 24552 --- [http-nio-8081-exec-7] c.b.h.dao.EpidemicDao.findAllArea        : ==>  Preparing: SELECT risk_region FROM epidemic 
+2022-05-15 14:00:56.686 DEBUG 24552 --- [http-nio-8081-exec-7] c.b.h.dao.EpidemicDao.findAllArea        : ==> Parameters: 
+2022-05-15 14:00:56.687 DEBUG 24552 --- [http-nio-8081-exec-7] c.b.h.dao.EpidemicDao.findAllArea        : <==      Total: 2
+2022-05-15 14:00:56.687 DEBUG 24552 --- [http-nio-8081-exec-7] c.b.housetest.dao.StudentDao.findByArea  : ==>  Preparing: select * from student where area in ( ? , ? ) 
+2022-05-15 14:00:56.688 DEBUG 24552 --- [http-nio-8081-exec-7] c.b.housetest.dao.StudentDao.findByArea  : ==> Parameters: 上海市辖区浦东新区(String), 北京市辖区东城区(String)
+2022-05-15 14:00:56.689 DEBUG 24552 --- [http-nio-8081-exec-7] c.b.housetest.dao.StudentDao.findByArea  : <==      Total: 2
+2022-05-15 14:00:58.209 DEBUG 24552 --- [http-nio-8081-exec-9] c.base.housetest.dao.NoticeDao.findAll   : ==>  Preparing: SELECT * FROM notice 
+2022-05-15 14:00:58.209 DEBUG 24552 --- [http-nio-8081-exec-9] c.base.housetest.dao.NoticeDao.findAll   : ==> Parameters: 
+2022-05-15 14:00:58.210 DEBUG 24552 --- [http-nio-8081-exec-9] c.base.housetest.dao.NoticeDao.findAll   : <==      Total: 2
+2022-05-15 14:01:02.256 DEBUG 24552 --- [http-nio-8081-exec-10] c.base.housetest.dao.NoticeDao.findById  : ==>  Preparing: SELECT * FROM notice WHERE id = ? 
+2022-05-15 14:01:02.257 DEBUG 24552 --- [http-nio-8081-exec-10] c.base.housetest.dao.NoticeDao.findById  : ==> Parameters: 2(Long)
+2022-05-15 14:01:02.262 DEBUG 24552 --- [http-nio-8081-exec-10] c.base.housetest.dao.NoticeDao.findById  : <==      Total: 1
+2022-05-15 14:01:09.533 DEBUG 24552 --- [http-nio-8081-exec-1] c.base.housetest.dao.StudentDao.findAll  : ==>  Preparing: select * from student; 
+2022-05-15 14:01:09.533 DEBUG 24552 --- [http-nio-8081-exec-1] c.base.housetest.dao.StudentDao.findAll  : ==> Parameters: 
+2022-05-15 14:01:09.535 DEBUG 24552 --- [http-nio-8081-exec-1] c.base.housetest.dao.StudentDao.findAll  : <==      Total: 3

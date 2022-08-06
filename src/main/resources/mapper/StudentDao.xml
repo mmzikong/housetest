@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.base.housetest.dao.StudentDao">
+    <insert id="add" parameterType="com.base.housetest.model.Student" >
+        insert into student(student_name, student_no, sex,department,student_class,student_id,nation,hold,area,student_tel)
+        values (#{Student.studentName},#{Student.studentNo},#{Student.sex},#{Student.department},#{Student.studentClass},#{Student.studentId},#{Student.nation},#{Student.hold},#{Student.area},#{Student.studentTel});
+    </insert>
+
+    <select id="findAll" resultType="com.base.housetest.model.Student">
+        select * from student;
+    </select>
+    <update id="moveIn">
+        update student set area = #{area},hold = #{nowWhere},in_date = #{inDate} where student_no=#{studentNo}
+    </update>
+    <update id="moveOut">
+        update student set area = #{area},hold = #{nowWhere},out_date = #{outDate} where student_no=#{studentNo}
+    </update>
+    <delete id="deleteByListId" >
+        delete from student where id in
+        <foreach  collection="array" item="idList" open="(" close=")" separator=",">
+            #{idList}
+        </foreach>
+    </delete>
+    <select id="findSearchLike" resultType="com.base.housetest.model.Student" parameterType="String">
+        select * from student WHERE 1=1
+        <if test="_parameter != null and _parameter !='' ">
+            <bind name="pattern" value="'%' + _parameter + '%'"/>
+            and CONCAT(student_no,student_name) like #{pattern}
+        </if>
+    </select>
+    <update id="update">
+        update student set student_name=#{Student.studentName},student_no=#{Student.studentNo},sex=#{Student.sex},department=#{Student.department},student_class=#{Student.studentClass},
+                           student_id=#{Student.studentId},nation=#{Student.nation},hold=#{Student.hold},area=#{Student.area},student_tel=#{Student.studentTel},in_date=#{Student.inDate},out_date=#{Student.outDate}
+        where id = #{id}
+    </update>
+    <select id="findByArea" parameterType="String" resultType="com.base.housetest.model.Student">
+        select * from student where area in
+        <foreach  collection="list" item="area" open="(" close=")" separator=",">
+            #{area}
+        </foreach>
+    </select>
+</mapper>

@@ -1,0 +1,53 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/housetest?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    view:
+      prefix: /WEB-INF/views
+      suffix: .jsp
+    static-path-pattern: /static/**
+    format:
+      date: yyyy-MM-dd
+
+  resources:
+    static-locations: classpath:/static/
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.base.housetest.dao
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    root: info
+    com.base: debug
+  file:
+    name: log/housetest.log
+
+server:
+  port: 8081
+
+
+
+##阿里云sms配置
+#
+#ali.sms.accessKeyId=这里是你的AccessKey ID
+#ali.sms.accessSecret=这里是你的AccessKey Secret
+#ali.sms.regionId=cn-hangzhou
+#ali.sms.sysDomain=dysmsapi.aliyuncs.com
+#ali.sms.sysVersion=2017-05-25
+#ali.sms.sysAction=SendSms
+#ali.sms.enabled=true
+
+
+#ali.sms.phone.sendCode.bu=申请的短信签名
+#ali.sms.phone.sendCode.temp=申请的短信模板编码
+#ali.sms.phone.sendCode.msg=备注信息

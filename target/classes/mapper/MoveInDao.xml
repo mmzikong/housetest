@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.base.housetest.dao.MoveInDao">
+<!--    <insert id="add" parameterType="com.base.housetest.model.Student" >-->
+<!--        insert into student(student_name, student_no, sex,department,student_class,student_id,nation,hold)-->
+<!--        values (#{Student.studentName},#{Student.studentNo},#{Student.sex},#{Student.department},#{Student.studentClass},#{Student.studentId},#{Student.nation},#{Student.hold});-->
+<!--    </insert>-->
+
+    <select id="findAll" resultType="com.base.housetest.model.MoveIn">
+        select * from move_in;
+    </select>
+<!--    <insert id="add" parameterType="com.base.housetest.model.MoveIn">-->
+<!--        insert into move_in(name, studentNo, whereIn,inDate,whyIn) values (#{name },#{studentNo},#{whereIn},#{inDate},#{whyIn})-->
+<!--    </insert>-->
+    <insert id="add" parameterType="com.base.housetest.model.MoveIn">
+        insert into move_in(name,student_no, in_date,area,where_in,why_in) values (#{moveIn.name},#{moveIn.studentNo},#{moveIn.inDate},#{moveIn.area},#{moveIn.whereIn},#{moveIn.whyIn})
+    </insert>
+    <delete id="deleteByListId" >
+        delete from move_in where id in
+        <foreach  collection="array" item="idList" open="(" close=")" separator=",">
+            #{idList}
+        </foreach>
+    </delete>
+    <select id="findSearchLike" resultType="com.base.housetest.model.MoveIn" parameterType="String">
+        select * from move_in WHERE 1=1
+        <if test="_parameter != null and _parameter !='' ">
+            <bind name="pattern" value="'%' + _parameter + '%'"/>
+            and CONCAT(student_no,name) like #{pattern}
+        </if>
+    </select>
+    <update id="update">
+        update move_in set name=#{moveIn.name},student_no=#{moveIn.studentNo},in_date=#{moveIn.inDate},area=#{moveIn.area},where_in=#{moveIn.whereIn},why_in=#{moveIn.whyIn}
+        where id = #{id}
+    </update>
+</mapper>

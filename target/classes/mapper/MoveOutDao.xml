@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.base.housetest.dao.MoveOutDao">
+<!--    <insert id="add" parameterType="com.base.housetest.model.Student" >-->
+<!--        insert into student(student_name, student_no, sex,department,student_class,student_id,nation,hold)-->
+<!--        values (#{Student.studentName},#{Student.studentNo},#{Student.sex},#{Student.department},#{Student.studentClass},#{Student.studentId},#{Student.nation},#{Student.hold});-->
+<!--    </insert>-->
+    <insert id="add" parameterType="com.base.housetest.model.MoveOut">
+        insert into move_out(student_no,name, out_date,area,where_out,why_out) values (#{moveOut.studentNo},#{moveOut.name},#{moveOut.outDate},#{moveOut.area},#{moveOut.whereOut},#{moveOut.whyOut})
+    </insert>
+    <select id="findAll" resultType="com.base.housetest.model.MoveOut">
+        select * from move_out;
+    </select>
+    <delete id="deleteByListId" >
+        delete from move_out where id in
+        <foreach  collection="array" item="idList" open="(" close=")" separator=",">
+            #{idList}
+        </foreach>
+    </delete>
+    <select id="findSearchLike" resultType="com.base.housetest.model.MoveOut" parameterType="String">
+        select * from move_out WHERE 1=1
+        <if test="_parameter != null and _parameter !='' ">
+            <bind name="pattern" value="'%' + _parameter + '%'"/>
+            and CONCAT(student_no,name) like #{pattern}
+        </if>
+    </select>
+    <update id="update">
+        update move_out set name=#{moveOut.name},student_no=#{moveOut.studentNo},out_date=#{moveOut.outDate},area=#{moveOut.area},where_out=#{moveOut.whereOut},why_out=#{moveOut.whyOut}
+        where id = #{id}
+    </update>
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.base.housetest.dao.EpidemicDao">
+    <delete id="deleteByListId" >
+        delete from epidemic where id in
+        <foreach  collection="array" item="idList" open="(" close=")" separator=",">
+            #{idList}
+        </foreach>
+    </delete>
+    <select id="findSearchLike" resultType="com.base.housetest.model.Epidemic" parameterType="String">
+        select * from epidemic WHERE 1=1
+        <if test="_parameter != null and _parameter !='' ">
+            <bind name="pattern" value="'%' + _parameter + '%'"/>
+            and CONCAT(risk_region) like #{pattern}
+        </if>
+    </select>
+    <select id="findSearchLikeArea" resultType="String" parameterType="String">
+        select risk_region from epidemic WHERE 1=1
+        <if test="_parameter != null and _parameter !='' ">
+            <bind name="pattern" value="'%' + _parameter + '%'"/>
+            and CONCAT(risk_region) like #{pattern}
+        </if>
+    </select>
+</mapper>
